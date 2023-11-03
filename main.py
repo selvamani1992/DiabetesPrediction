@@ -12,7 +12,7 @@ def get_img_as_base64(file):
     with open(file, "rb") as f:
         data = f.read()
     return pybase64.b64encode(data).decode()
-img = get_img_as_base64("bg1.jpg")
+img = get_img_as_base64("bg.jpg")
 st.markdown(
     """
     <style>
